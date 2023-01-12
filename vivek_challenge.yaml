@@ -6,7 +6,7 @@ Parameters:
 
 Resources:
   MyInstance:
-    Type: AWS:EC2:Instance
+    Type: AWS::EC2::Instance
     Properties:
       AvailabilityZone: us-egit intiast-1a
       ImageId: ami-a4c7edb2
@@ -50,7 +50,6 @@ Resources:
       - IpProtocol: tcp
         FromPort: 80
         ToPort: 80
-
       - IpProtocol: tcp
         FromPort: 22
         ToPort: 22
